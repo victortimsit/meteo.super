@@ -8,9 +8,14 @@
     <!--build:css styles/styles.min.css-->
     <link rel="stylesheet" href="styles/css/base/styles.css" />
     <link rel="stylesheet" href="styles/css/layout/header.css" />
+    <link rel="stylesheet" href="styles/css/layout/content.css" />
     <link rel="stylesheet" href="styles/css/layout/navigation.css" />
+    <link rel="stylesheet" href="styles/css/layout/dailyWeather.css" />
+    <link rel="stylesheet" href="styles/css/layout/dailyNews.css" />
     <link rel="stylesheet" href="styles/css/module/headerModules.css" />
     <link rel="stylesheet" href="styles/css/module/navigationModules.css" />
+    <link rel="stylesheet" href="styles/css/module/dailyWeatherModules.css" />
+    <link rel="stylesheet" href="styles/css/module/dailyNewsModules.css" />
     <link rel="stylesheet" href="styles/css/tools/reset.css" />
     <link rel="stylesheet" href="styles/css/tools/fonts.css" />
 
@@ -18,19 +23,21 @@
     <!--endbuild-->
   </head>
   <body>
+      <!--Header-->
       <header class="header">
         <div class="header__content">
           <div class="header__logo">
-            <img class="header__logoImg" src="assets/images/weatherIcons/02d.png" alt="meteo.super icon">
+            <img class="header__logoImg" src="assets/images/weatherIcons/02d.png" alt="Meteo.super icon">
             <div class="header__siteName">météo.super</div>
           </div>
           <input class="header__input" type="text" placeholder="Rechercher une ville">
         </div>
       </header>
+      <!--Navigation-->
       <nav class="navigation">
         <div class="navigation__meteo">
           <div class="navigation__title">
-            <img class="navigation__meteoIcon" src="assets/images/navIcons/navMeteo.png" alt="meteo icon">
+            <img class="navigation__meteoIcon" src="assets/images/navIcons/navMeteo.png" alt="Meteo icon">
             <div class="navigation__titleName">météo</div>
           </div>
         </div>
@@ -41,6 +48,48 @@
           </div>
         </div>
       </nav>
+      <!--Content-->
+      <div class="content">
+
+        <h1 class="cityName">Paris</h1>
+        <div class="dailyWeather">
+          <div class="dailyWeather__currentTime">11H30</div>
+          <div class="dailyWeather__currentDay">Mardi</div>
+          <img class="dailyWeather__currentWeatherIcon" src="assets/images/weatherIcons/02d.png" alt="Weather icon">
+          <div class="dailyWeather__description">
+            <div class="dailyWeather__currentTemperature">15°</div>
+            <div class="dailyWeather__currentDescription">Few clouds</div>
+            <div class="dailyWeather__line"></div>
+          </div>
+          <div class="dailyWeather__nextHoursWeather-1">
+            <div class="dailyWeather__nextHoursWeatherHour">14:00</div>
+            <img class="dailyWeather__nextHoursWeatherIcon" src="assets/images/weatherIcons/03d.png" alt="Weather icon">
+          </div>
+          <div class="dailyWeather__nextHoursWeather-2">
+            <div class="dailyWeather__nextHoursWeatherHour">17:00</div>
+            <img class="dailyWeather__nextHoursWeatherIcon" src="assets/images/weatherIcons/04d.png" alt="Weather icon">
+          </div>
+          <div class="dailyWeather__nextHoursWeather-3">
+            <div class="dailyWeather__nextHoursWeatherHour">20:00</div>
+            <img class="dailyWeather__nextHoursWeatherIcon" src="assets/images/weatherIcons/05d.png" alt="Weather icon">
+          </div>
+        </div>
+        <div class="dailyNews">
+          <h2 class="dailyNews__title">Hausse de la CSG : Philippe va «corriger le dispositif» pour les retraités</h2>
+          <div class="dailyNews__lineBold"></div>
+          <div class="dailyNews__publicationDate">Publiée le 2018-03-20T11:56:49Z</div>
+          <div class="dailyNews__line"></div>
+          <div class="dailyNews__article">
+            <p class="dailyNews__articleStart">Dans un entretien à BFMTV/RMC, le premier ministre a promis un geste pour les 100.000 retraités touchés par la hausse de la CSG alors qu'ils ne dépassent le seuil déclenchant l'augmentation que de quelques euros. Il promet aussi de se pencher sur la question …
+            </p>
+            <p class="dailyNews__articleEnd">...</p>
+          </div>
+          <div class="dailyNews__preview"></div>
+          <div class="dailyNews__line"></div>
+          <div class="dailyNews__author">Écrit par 20 Minutes avec agences.</div>
+          <div class="dailyNews__button">Découvrir</div>
+        </div>
+      </div>
     <!--build:js scripts/main.min.js -->
     <script src="scripts/script.js"></script>
     <!--endbuild-->
