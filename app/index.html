@@ -8,8 +8,13 @@
     <!--build:css styles/styles.min.css-->
     <link rel="stylesheet" href="styles/css/base/styles.css" />
     <link rel="stylesheet" href="styles/css/layout/header.css" />
+    <link rel="stylesheet" href="styles/css/layout/navigation.css" />
     <link rel="stylesheet" href="styles/css/module/headerModules.css" />
+    <link rel="stylesheet" href="styles/css/module/navigationModules.css" />
     <link rel="stylesheet" href="styles/css/tools/reset.css" />
+    <link rel="stylesheet" href="styles/css/tools/fonts.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <!--endbuild-->
   </head>
   <body>
@@ -17,11 +22,25 @@
         <div class="header__content">
           <div class="header__logo">
             <img class="header__logoImg" src="assets/images/weatherIcons/02d.png" alt="meteo.super icon">
-            <div class="header__siteName">meteo.super</div>
+            <div class="header__siteName">météo.super</div>
           </div>
           <input class="header__input" type="text" placeholder="Rechercher une ville">
         </div>
       </header>
+      <nav class="navigation">
+        <div class="navigation__meteo">
+          <div class="navigation__title">
+            <img class="navigation__meteoIcon" src="assets/images/navIcons/navMeteo.png" alt="meteo icon">
+            <div class="navigation__titleName">météo</div>
+          </div>
+        </div>
+        <div class="navigation__liveView">
+          <div class="navigation__title">
+            <img class="navigation__liveViewIcon" src="assets/images/navIcons/navLiveView.png" alt="Live view icon">
+            <div class="navigation__titleName">live</div>
+          </div>
+        </div>
+      </nav>
     <!--build:js scripts/main.min.js -->
     <script src="scripts/script.js"></script>
     <!--endbuild-->
