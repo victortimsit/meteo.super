@@ -1,0 +1,91 @@
+@import '../tools/breakpoints.styl'
+
+.dailyNews__title
+    margin-bottom 10px
+
+    font-weight bold
+    font-size 20px
+    line-height 20px
+
+    transform translateY(-10%)
+
+.dailyNews__lineBold
+    width 100%
+    height 2px
+
+    background-color #F0F0F0
+
+.dailyNews__publicationDate
+    margin-top 20px
+    margin-bottom 10px
+
+.dailyNews__line
+    width 100%
+    height 1px
+
+    background-color #F0F0F0
+
+.dailyNews__article
+    width 310px
+    // height 150px
+    display inline-block
+    // float left
+    // overflow hidden
+    margin-top 10px
+    margin-bottom 10px
+    @media screen and (max-width: $medium-tablet)
+        width 100%
+
+.dailyNews__articleStart
+    height 120px
+    overflow hidden
+    line-height 20px
+
+.dailyNews__articleEnd
+    width 310px
+    margin-bottom 20px
+    margin 0px
+
+.dailyNews__preview
+    width 220px
+    height 135px
+    margin-top 10px
+    float right
+
+    background-color grey
+    display inline-block
+    @media screen and (max-width: $medium-tablet)
+        width 100%
+        margin-bottom 10px
+    
+    
+.dailyNews__author
+    margin-top 20px
+    @media screen and (max-width: $medium-tablet)
+        margin-bottom 10px
+
+.dailyNews__button
+    width 120px
+    height 50px
+    margin-top 10px
+    margin-bottom 20px
+    padding-top 18px
+    float right
+
+    border-radius 2px
+
+    font-weight bold
+    text-align center
+
+    background #4A90E2
+    color #FFFFFF
+
+    cursor pointer
+    transition 300ms
+    &:hover
+        padding-top 17px
+        background-color #FFFFFF
+        color #4A90E2
+        border 1px solid #4A90E2
+    &:active
+        transform scale(0.9)
