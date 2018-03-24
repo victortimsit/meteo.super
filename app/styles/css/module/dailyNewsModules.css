@@ -75,4 +75,14 @@
   background: #4a90e2;
   color: #fff;
   cursor: pointer;
+  transition: 300ms;
+}
+.dailyNews__button:hover {
+  padding-top: 17px;
+  background-color: #fff;
+  color: #4a90e2;
+  border: 1px solid #4a90e2;
+}
+.dailyNews__button:active {
+  transform: scale(0.9);
 }
